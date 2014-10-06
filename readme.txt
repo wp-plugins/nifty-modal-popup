@@ -29,7 +29,7 @@ Click to view the [Effects](http://pidhasome.com/albdesign/plugins/nifty_modal_w
 
 <h4>Pro Version </h4> [purchase](http://woothemes-plugins.com/product/nifty-modal-window-effect/)
 
-The Pro version of this plugin provides
+The Pro version of this plugin provides the features above and also
 
 * Shortcode support inside the modal content itself so you can integrate forms,sliders,video,products from other plugins
 * Option to set the modal title background color
