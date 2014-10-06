@@ -27,7 +27,7 @@ Based on http://tympanus.net/
 
 Click to view the [Effects](http://pidhasome.com/albdesign/plugins/nifty_modal_windows_wordpress_plugin/documentation/documentation/) and [Documentation](http://pidhasome.com/albdesign/plugins/nifty_modal_windows_wordpress_plugin/documentation/documentation/)
 
-<h4>Pro Version </h4>
+<h4>Pro Version </h4> [purchase](http://woothemes-plugins.com/product/nifty-modal-window-effect/)
 
 The Pro version of this plugin provides
 
@@ -42,7 +42,7 @@ The Pro version of this plugin provides
 * Padding of the modal popup
 * Width of the modal popup window
 
-Click to [purchase](http://woothemes-plugins.com/product/nifty-modal-window-effect/)
+Click to [purchase](http://woothemes-plugins.com/product/nifty-modal-window-effect/) the Pro version
 
 == Installation ==
 
