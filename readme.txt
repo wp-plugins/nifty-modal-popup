@@ -9,7 +9,6 @@ License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Easily add modal popups , set their content , add images and text and select from 18 different great and nifty effects.
-Based on http://tympanus.net/
 
 == Description ==
 
