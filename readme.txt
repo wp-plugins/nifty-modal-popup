@@ -46,7 +46,7 @@ Click to [purchase](http://woothemes-plugins.com/product/nifty-modal-window-effe
 
 
 
-Based on http://tympanus.net/
+Based on www.tympanus.net
 
 == Installation ==
 
