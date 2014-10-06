@@ -53,15 +53,19 @@ Create the modals by going to 'Modal Popups'. Then use the shortcode that you wi
 
 == Frequently Asked Questions ==
 
-= I dont see any option when i use the form =
+= I cant select any modal when i use the Add Modal Popup on a page =
 
 Make sure that at least one modal popup is published
 
+= Where can i see a demo of the effects  =
+
+[Click Here](http://pidhasome.com/albdesign/plugins/nifty_modal_windows_wordpress_plugin/documentation/documentation/)
 
 == Screenshots ==
 
 1. Admin options page
 2. Explanation of the elements of a modal popup window
+
 
 == Changelog ==
 
