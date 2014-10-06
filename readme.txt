@@ -13,7 +13,7 @@ Easily add modal popups , set their content , add images and text and select fro
 == Description ==
 
 Easily add modal popups , set their content , add images and text and select from 18 different great and nifty effects.
-Based on http://tympanus.net/
+
 
 <h4>Features</h4>
 
@@ -43,6 +43,10 @@ The Pro version of this plugin provides the features above and also
 * Width of the modal popup window
 
 Click to [purchase](http://woothemes-plugins.com/product/nifty-modal-window-effect/) the Pro version
+
+
+
+Based on http://tympanus.net/
 
 == Installation ==
 
