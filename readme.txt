@@ -65,6 +65,17 @@ Make sure that at least one modal popup is published
 
 1. Admin options page
 2. Explanation of the elements of a modal popup window
+3. Adding a modal popup using the Add Modal Popup
+4. Modal content support also shortcode from other plugins (Pro version only)
+5. What type the element ,that will launch the popup, will be (Pro version only)
+6. Padding inside the modal window (Pro version only)
+7. Width of the modal window (Pro version only)
+8. Select the background color of the modal window (Pro version only)
+9. Select the generic text color (Pro version only)
+10. Title background color (Pro version only)
+11. Title text color (Pro version only)
+12. Overlay color (Pro version only)
+13. Overlay opacity (Pro version only)
 
 
 == Changelog ==
