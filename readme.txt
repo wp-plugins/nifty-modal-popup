@@ -15,7 +15,7 @@ Easily add modal popups , set their content , add images and text and select fro
 Easily add modal popups , set their content , add images and text and select from 18 different great and nifty effects.
 Based on http://tympanus.net/
 
-Features
+<h4>Features</h4>
 
 * Use wordpress editor to add text
 * Use wordpress editor to add images
@@ -25,6 +25,24 @@ Features
 * Shortcode support so you can add on any page, post etc
 * Easily add the modal created from the page,post or other custom post types using the integrated from
 
+Click to view the [Documentation](http://pidhasome.com/albdesign/plugins/nifty_modal_windows_wordpress_plugin/documentation/documentation/)
+
+<h4>Pro Version </h4>
+
+The Pro version of this plugin provides
+
+* Shortcode support inside the modal content itself so you can integrate forms,sliders,video,products from other plugins
+* Option to set the modal title background color
+* Option to set the modal title color
+* Option to set the background color of the modal popup
+* Option to set the color of the text inside the modal popup 
+* Option to select the color of the overlay 
+* Option to set the opacity of the overlay
+* Option to select what element ( link , text , paragraph ,button , h1,h2,h3,h4,h5,h6 ) will open the modal popup
+* Padding of the modal popup
+* Width of the modal popup window
+
+Click to [purchase](http://woothemes-plugins.com/product/nifty-modal-window-effect/)
 
 == Installation ==
 
