@@ -25,7 +25,7 @@ Based on http://tympanus.net/
 * Shortcode support so you can add on any page, post etc
 * Easily add the modal created from the page,post or other custom post types using the integrated from
 
-Click to view the [Documentation](http://pidhasome.com/albdesign/plugins/nifty_modal_windows_wordpress_plugin/documentation/documentation/)
+Click to view the [Effects](http://pidhasome.com/albdesign/plugins/nifty_modal_windows_wordpress_plugin/documentation/documentation/) and [Documentation](http://pidhasome.com/albdesign/plugins/nifty_modal_windows_wordpress_plugin/documentation/documentation/)
 
 <h4>Pro Version </h4>
 
