@@ -61,6 +61,7 @@ Make sure that at least one modal popup is published
 == Screenshots ==
 
 1. Admin options page
+2. Explanation of the elements of a modal popup window
 
 == Changelog ==
 
