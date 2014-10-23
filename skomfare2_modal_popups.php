@@ -3,7 +3,7 @@
 Plugin Name: Nifty Modal Popups Lite
 Description: Create  modal popups based on http://tympanus.net/
 Author URI: http://profiles.wordpress.org/skomfare2/
-Version: 1.0
+Version: 1.1
 Author: Skomfare2
 Author URI: http://profiles.wordpress.org/skomfare2/
 */
