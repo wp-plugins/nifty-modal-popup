@@ -226,7 +226,7 @@ class Albdesign_Modal_Popups_Lite {
 			
 			<div  style="opacity:1">
 				<a href="http://pidhasome.com/albdesign/plugins/nifty_modal_windows_wordpress_plugin/documentation/documentation/" target="_blank">Documentation</a> <br><br>
-				<a href="http://woothemes-plugins.com/product/nifty-modal-window-effect/"  target="_blank">Click here to see and purchase the full  features and options for this plugin</a>
+				<a href="http://gplplugins.com/product/nifty-modal-window-effect/"  target="_blank">Click here to see and purchase the full  features and options for this plugin</a>
 			</div>
 			
 			<input type="hidden" name="prevent_delete_meta_movetotrash" id="prevent_delete_meta_movetotrash" value="<?php echo wp_create_nonce(plugin_basename(__FILE__)); ?>" />
