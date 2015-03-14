@@ -3,7 +3,7 @@
 Plugin Name: Nifty Modal Popups Lite
 Description: Create  modal popups based on http://tympanus.net/
 Author URI: http://profiles.wordpress.org/skomfare2/
-Version: 1.2
+Version: 1.3
 Author: Skomfare2
 Author URI: http://profiles.wordpress.org/skomfare2/
 */
@@ -58,6 +58,11 @@ class Albdesign_Modal_Popups_Lite {
 		//register the shortcode
 		add_shortcode('skomfare2_modal_popup',array($this, 'add_modal_popup_shortcode'));
 		
+		
+		//admin notices
+		add_action( 'admin_notices', array( $this, '_wp_admin_notices' ) );
+		//close admin notices ajax 
+		add_action( 'wp_ajax_nifty_modal_light_hide_admin_notice', array( $this, 'nifty_modal_light_hide_admin_notice' ) );
 		
 		$this->run_plugin();
 	}
@@ -146,6 +151,42 @@ class Albdesign_Modal_Popups_Lite {
 
 }
 
+
+	public function _wp_admin_notices() {
+		
+		global $current_user;
+		$has_closed_before =  get_user_meta($current_user->ID,'_hide_nifty_light_admin_notice', true);
+		
+		if($has_closed_before=='yes'){
+			return ;
+		}
+		 
+		?>
+			<div id="message" class="updated">
+				<?php echo $this->_wp_admin_notices_text(); ?> 
+				
+			</div>
+		<?php
+
+	}
+	
+	
+	public function _wp_admin_notices_text() {
+		$return_html = '<p>
+					<strong>Hello from Nifty Modal Popup! </strong> <a href="https://wordpress.org/support/view/plugin-reviews/nifty-modal-popup?filter=5#postform" target="_blank" > Kindly rate us ★★★★★ on Wordpress.org. A big THANK YOU in advance.</a>  ( <a href="#" class="admin_notice_close_nifty_light_message">close</a> )
+				</p>';
+		return $return_html;
+	}
+
+	
+	function nifty_modal_light_hide_admin_notice(){
+		
+		global $current_user;
+		update_user_meta($current_user->ID, '_hide_nifty_light_admin_notice', 'yes');
+		die(json_encode(array('status'=>'ok')));
+		
+	}
+	
 	/*
 	* Add the metabox , remove slug 
 	*/
@@ -226,7 +267,10 @@ class Albdesign_Modal_Popups_Lite {
 			
 			<div  style="opacity:1">
 				<a href="http://pidhasome.com/albdesign/plugins/nifty_modal_windows_wordpress_plugin/documentation/documentation/" target="_blank">Documentation</a> <br><br>
-				<a href="http://gplplugins.com/product/nifty-modal-window-effect/"  target="_blank">Click here to see and purchase the full  features and options for this plugin</a>
+				<a href="http://gplplugins.com/product/nifty-modal-window-effect/"  target="_blank">Click here to see and purchase the full  features and options for this plugin</a> <br><br>
+				
+				<?php echo $this->_wp_admin_notices_text();?>
+				
 			</div>
 			
 			<input type="hidden" name="prevent_delete_meta_movetotrash" id="prevent_delete_meta_movetotrash" value="<?php echo wp_create_nonce(plugin_basename(__FILE__)); ?>" />
@@ -355,11 +399,27 @@ class Albdesign_Modal_Popups_Lite {
 				//Custom modal effect
 				var modalEffect = jQuery("#albdesign_modal_popup_effect_shortcode  option:selected").val();
 
-				
                 var form_name = jQuery("#add_albdesign_modal_popup_id option[value='" + form_id + "']").text().replace(/[\[\]]/g, '');
 
                 window.send_to_editor("[skomfare2_modal_popup id=\"" + form_id + "\"]");
             }
+			
+			
+			jQuery('document').ready(function(){
+				jQuery('a.admin_notice_close_nifty_light_message').click(function(){
+					jQuery.ajax({
+						url:ajaxurl,
+						type:'POST',
+						data:'action=nifty_modal_light_hide_admin_notice',
+						success:function(result){
+							console.log('hallall');
+							//jQuery('#message').slideUp('slow');
+						}
+					});
+					return false;
+				});
+			});
+			
         </script>
 
         <div id="select_albdesign_modal_popup_form" style="display:none;">
