@@ -14,7 +14,7 @@ Easily add modal popups , set their content , add images and text and select fro
 
 Easily add modal popups , set their content , add images and text and select from 18 different great and nifty effects.
 
-= Where can i see a demo of the effects  =
+<h4> Where can i see a demo of the effects  </h4>
 
 [Click Here](http://pidhasome.com/albdesign/plugins/nifty_modal_windows_wordpress_plugin/documentation/documentation/)
 
