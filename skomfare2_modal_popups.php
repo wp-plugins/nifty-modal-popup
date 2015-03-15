@@ -3,7 +3,7 @@
 Plugin Name: Nifty Modal Popups Lite
 Description: Create  modal popups based on http://tympanus.net/
 Author URI: http://profiles.wordpress.org/skomfare2/
-Version: 1.4
+Version: 1.5
 Author: Skomfare2
 Author URI: http://profiles.wordpress.org/skomfare2/
 */
@@ -157,7 +157,7 @@ class Albdesign_Modal_Popups_Lite {
 		global $current_user;
 		$has_closed_before =  get_user_meta($current_user->ID,'_hide_nifty_light_admin_notice', true);
 		
-		if($has_closed_before=='yes'){
+		if($has_closed_before=='yess'){
 			return ;
 		}
 		 
@@ -182,7 +182,7 @@ class Albdesign_Modal_Popups_Lite {
 	function nifty_modal_light_hide_admin_notice(){
 		
 		global $current_user;
-		update_user_meta($current_user->ID, '_hide_nifty_light_admin_notice', 'yes');
+		update_user_meta($current_user->ID, '_hide_nifty_light_admin_notice', 'yess');
 		die(json_encode(array('status'=>'ok')));
 		
 	}
