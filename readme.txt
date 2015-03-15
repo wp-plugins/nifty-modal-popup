@@ -45,6 +45,9 @@ The Pro version of this plugin provides the features above and also
 Click to [purchase](http://woothemes-plugins.com/product/nifty-modal-window-effect/) the Pro version
 
 
+<h4>Leave a Review </h4> 
+
+Kindly rate us ★★★★★ . A big THANK YOU in advance.
 
 Based on www.tympanus.net
 
