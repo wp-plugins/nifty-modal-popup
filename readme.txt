@@ -47,7 +47,7 @@ Click to [purchase](http://woothemes-plugins.com/product/nifty-modal-window-effe
 
 <h4>Leave a Review </h4> 
 
-[Kindly rate us ★★★★★  on the right side of this page.](https://wordpress.org/support/view/plugin-reviews/nifty-modal-popup?filter=5#postform) A big THANK YOU in advance.
+[Kindly rate us ★★★★★  on the right side of this page.](https://wordpress.org/support/view/plugin-reviews/nifty-modal-popup?filter=5#postform) . The first 20 persons rating us 5 stars will <b>win a free copy</b> of the Pro version. A big THANK YOU in advance.
 
 Based on www.tympanus.net
 
