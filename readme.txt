@@ -47,7 +47,7 @@ Click to [purchase](http://woothemes-plugins.com/product/nifty-modal-window-effe
 
 <h4>Leave a Review </h4> 
 
-Kindly rate us ★★★★★ . A big THANK YOU in advance.
+Kindly rate us ★★★★★ on the right side of this page. A big THANK YOU in advance.
 
 Based on www.tympanus.net
 
