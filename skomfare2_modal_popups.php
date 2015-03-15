@@ -3,7 +3,7 @@
 Plugin Name: Nifty Modal Popups Lite
 Description: Create  modal popups based on http://tympanus.net/
 Author URI: http://profiles.wordpress.org/skomfare2/
-Version: 1.5
+Version: 1.6
 Author: Skomfare2
 Author URI: http://profiles.wordpress.org/skomfare2/
 */
@@ -173,7 +173,7 @@ class Albdesign_Modal_Popups_Lite {
 	
 	public function _wp_admin_notices_text() {
 		$return_html = '<p>
-					<strong>Hello from Nifty Modal Popup! </strong> <a href="https://wordpress.org/support/view/plugin-reviews/nifty-modal-popup?filter=5#postform" target="_blank" > Kindly rate us ★★★★★ on Wordpress.org. The first 20 persons rating us 5 stars will <b>win a free copy</b> of the Pro version. A big THANK YOU in advance.</a>  ( <a href="#" class="admin_notice_close_nifty_light_message">close</a> )
+					<strong>Hello from Nifty Modal Popup! </strong> <a href="https://wordpress.org/support/view/plugin-reviews/nifty-modal-popup?filter=5#postform" target="_blank" > Kindly rate us ★★★★★ on Wordpress.org. The first 20 persons rating us 5 stars will <b>win a free copy</b> of the Pro version. Leave your email address on the review so we can send it. A big THANK YOU in advance.</a>  ( <a href="#" class="admin_notice_close_nifty_light_message">close</a> )
 				</p>';
 		return $return_html;
 	}
