@@ -92,5 +92,8 @@ Make sure that at least one modal popup is published
 
 == Changelog ==
 
+= 1.7.2 =
+* Fixed - Clicking outside modal should close modals on a page with multiple modals
+
 = 1.0 =
 * First release.
