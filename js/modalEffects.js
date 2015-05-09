@@ -14,10 +14,19 @@ var ModalEffects = (function() {
 
 		var overlay = document.querySelector( '.md-overlay' );
 		
+		jQuery('.md-overlay').each(function(){
+			jQuery(this).click(function(){
+				jQuery('.md-modal').each(function(){
+					jQuery('.md-modal').removeClass('md-show');
+				});
+			});
+		});
 		
 		jQuery(".md-trigger").click(function(e) {
 			e.preventDefault();
-
+			overlayBackgroundColor = jQuery(this).attr("data-modal-backgroundColor");
+			overlayBackgroundOpacity = jQuery(this).attr("data-modal-backgroundOpacity");
+			
 		});
 		
 		
@@ -40,9 +49,10 @@ var ModalEffects = (function() {
 			}
 
 			el.addEventListener( 'click', function( ev ) {
+				
 				classie.add( modal, 'md-show' );
-				overlay.removeEventListener( 'click', removeModalHandler );
-				overlay.addEventListener( 'click', removeModalHandler );
+			//	overlay.removeEventListener( 'click', removeModalHandler );
+			//	overlay.addEventListener( 'click', removeModalHandler );
 
 				if( classie.has( el, 'md-setperspective' ) ) {
 					setTimeout( function() {
@@ -52,7 +62,7 @@ var ModalEffects = (function() {
 			});
 
 			close.addEventListener( 'click', function( ev ) {
-				ev.stopPropagation();
+			//	ev.stopPropagation();
 				removeModalHandler();
 			});
 
