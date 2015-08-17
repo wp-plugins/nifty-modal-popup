@@ -27,6 +27,7 @@ Easily add modal popups , set their content , add images and text and select fro
 * 18 different great and nifty effects
 * Customize the text that will open the popup
 * Make the popup open when the visitor moves outside browser window ( popup on exit )
+* Popup window has automatic scrollbars if popup content is taller 
 * How many times to show the popup-on-exit
 * Shortcode support so you can add on any page, post etc
 * Easily add the modal created from the page,post or other custom post types using the integrated from
