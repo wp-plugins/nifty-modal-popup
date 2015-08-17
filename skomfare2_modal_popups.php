@@ -55,6 +55,9 @@ class Albdesign_Modal_Popups_Lite {
 		//handle button addition below post title
 		add_action('admin_footer',  array($this, 'add_mce_popup'));
 		
+		//TODO : add footer scripts
+		add_action('wp_footer',  array($this, 'frontend_footer_scripts'));
+		
 		//register the shortcode
 		add_shortcode('skomfare2_modal_popup',array($this, 'add_modal_popup_shortcode'));
 		
@@ -102,8 +105,13 @@ class Albdesign_Modal_Popups_Lite {
 							
 							'triggered_by'				=> 'a',
 							'trigger_inside_text'		=> 'Open popup',
+							
 						);
-		update_option('albdesign_modal_popup_default_options', $default_options);
+						
+		//TODO
+		$updated_default_options = apply_filters('skomfare2_nifty_modal_before_save_default_options',$default_options);
+						
+		update_option('albdesign_modal_popup_default_options', $updated_default_options);
 	}
 
 
@@ -258,6 +266,11 @@ class Albdesign_Modal_Popups_Lite {
 						</td>
 					</tr>						
 
+					<?php 
+						//TODO
+						do_action('skomfare2_nifty_modal_settings_form',$actual_modal_meta_infos); 
+					?>
+					
 
 					
 					
@@ -312,8 +325,12 @@ class Albdesign_Modal_Popups_Lite {
 			}
 			$update_modal_infos['trigger_inside_text'] 			= $_POST['albdesign_modal_popup']['trigger_inside_text']; 
 			
+			
+			//TODO
+			$updated_modal_infos = apply_filters('skomfare2_nifty_modal_before_save_modal_infos',$update_modal_infos);
+			
 			//save the custom options for this modal
-			update_post_meta( $post_id, 'albdesign_single_modal_popup_infos', $update_modal_infos );
+			update_post_meta( $post_id, 'albdesign_single_modal_popup_infos', $updated_modal_infos );
 		
 		}
 	
@@ -349,6 +366,11 @@ class Albdesign_Modal_Popups_Lite {
 		
 		//Adding "embed form" button
         add_action('media_buttons', array($this, 'add_form_button_to_page'), 20);
+		
+		//TODO : include extra PHP files 
+		include($this->get_plugin_path()."extensions/open_on_exit/exit.intent.inc.php");
+		
+
 	}
 	
 
@@ -547,7 +569,7 @@ class Albdesign_Modal_Popups_Lite {
 		$post_content = $theModalPopup->post_content;
 			
 		$modal_effect = $modal_custom_meta['modal_effect'];
-
+		
 		//text for the clickable element
 		$textForTheClickableElement = $modal_custom_meta['trigger_inside_text'];
 		
@@ -563,15 +585,23 @@ class Albdesign_Modal_Popups_Lite {
 				
 				<div>
 					<?php echo $post_content; ?>
-					<?php echo apply_filters('albdesign_modal_popup_close_button-'.$id,'<button class="md-close">Close</button>', $id);?>
+					<?php echo apply_filters('albdesign_modal_popup_close_button-'.$id,'<button class="button md-close">Close</button>', $id);?>
 				</div>
 			</div>
 		</div>	
 		<div class=" albdesign-modal-overlay-<?php echo $id;?> md-overlay"  ></div><!-- the overlay element -->
 
 		<a class="md-trigger" data-modal="albdesign-modal-<?php echo $id;?>"> <?php echo $textForTheClickableElement;?> </a>
+		
+		
 		<?php 
+			//TODO
+			do_action('skomfare2_nifty_modal_bottom_short_code_output',$id,$modal_custom_meta); 
+		?>
+		
 
+		<?php	
+		
 		$html_to_return = ob_get_clean();
 		
 		return $html_to_return;
@@ -594,6 +624,37 @@ class Albdesign_Modal_Popups_Lite {
 		$columns['shortcode'] = 'Shortcode';
 
 		return $columns;
+	}
+	
+	
+	/*
+	* Footer scripts 
+	*/
+	
+	function frontend_footer_scripts(){?>
+		<script>
+			jQuery(document).ready(function(){
+				//TODO
+				skomfare2ModalWindow = jQuery('div.md-modal[id^="albdesign-modal-"]');
+				skomfare2ModalWindow.bind('webkitAnimationEnd oanimationend msAnimationEnd animationend transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd',function(e) {
+					skomfare2ModalWindow.addClass('skomfare2AnimationEnded');
+				});
+				
+				jQuery('.md-close').click(function(){
+					skomfare2ModalWindow.removeClass('skomfare2AnimationEnded');
+				});
+				
+				jQuery('.md-overlay').each(function(){
+					jQuery(this).click(function(){
+						jQuery('.md-modal').each(function(){
+							skomfare2ModalWindow.removeClass('skomfare2AnimationEnded');
+						});
+					});
+				});
+			});
+		</script>	
+	<?php
+	
 	}
 	
 }

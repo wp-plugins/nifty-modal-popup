@@ -3,8 +3,8 @@ Contributors: skomfare2
 Donate link: http://pidhasome.com/albdesign/plugins/woocommerce_donations/donate/
 Tags: popup,modal popup,nifty modal , nifty modal effect , tympanus , nifty modal popup
 Requires at least: 3.8.1
-Tested up to: 4.2.2
-Stable tag: 1.7.2
+Tested up to: 4.2.4
+Stable tag: 1.7.8
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,6 +26,8 @@ Easily add modal popups , set their content , add images and text and select fro
 * Support for text and html
 * 18 different great and nifty effects
 * Customize the text that will open the popup
+* Make the popup open when the visitor moves outside browser window ( popup on exit )
+* How many times to show the popup-on-exit
 * Shortcode support so you can add on any page, post etc
 * Easily add the modal created from the page,post or other custom post types using the integrated from
 
