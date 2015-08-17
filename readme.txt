@@ -19,7 +19,15 @@ Easily add modal popups , set their content , add images and text and select fro
 [Click Here](http://pidhasome.com/albdesign/plugins/nifty_modal_windows_wordpress_plugin/documentation/documentation/)
 
 
-<h4>Features</h4>
+<h4>Updates for version 1.7.8 </h4>
+
+Updates for version 1.7.8 :
+* Make the popup open when the visitor moves outside browser window ( popup on exit )
+* How many times to show the popup-on-exit
+* Popup window has automatic scrollbars if popup content is taller 
+
+
+<h4>All features</h4>
 
 * Use wordpress editor to add text
 * Use wordpress editor to add images
@@ -27,8 +35,8 @@ Easily add modal popups , set their content , add images and text and select fro
 * 18 different great and nifty effects
 * Customize the text that will open the popup
 * Make the popup open when the visitor moves outside browser window ( popup on exit )
-* Popup window has automatic scrollbars if popup content is taller 
 * How many times to show the popup-on-exit
+* Popup window has automatic scrollbars if popup content is taller 
 * Shortcode support so you can add on any page, post etc
 * Easily add the modal created from the page,post or other custom post types using the integrated from
 
