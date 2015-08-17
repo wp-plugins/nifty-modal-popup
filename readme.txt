@@ -102,6 +102,10 @@ Make sure that at least one modal popup is published
 
 == Changelog ==
 
+= 1.7.8 =
+* Added - Popup when visitor tries to leave the page
+* Added - Popup has scrollbars when there is too much content
+
 = 1.7.2 =
 * Fixed - Clicking outside modal should close modals on a page with multiple modals
 
